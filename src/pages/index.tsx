@@ -1,4 +1,6 @@
-import Head from 'next/head'
+import React from 'react';
+import Head from 'next/head';
+import { Header } from '../components';
 
 export default function Home() {
   return (
@@ -9,11 +11,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className=' bg-blue-300'>
-        <h1 className=" text-blue-700">
-          Hello world!
-        </h1>
+      <main>
+        <Header />
       </main>
     </>
-  )
+  );
 }
