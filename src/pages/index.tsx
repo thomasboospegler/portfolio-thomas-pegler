@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import { Header, About } from '../components';
+import { Header, About, ToolBox } from '../components';
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-neutral-800">
+      <main className="bg-neutral-900 text-gray-50">
         <div className="lines">
           <div className="line" />
           <div className="line" />
@@ -19,6 +19,7 @@ export default function Home() {
         </div>
         <Header />
         <About />
+        <ToolBox />
       </main>
     </>
   );

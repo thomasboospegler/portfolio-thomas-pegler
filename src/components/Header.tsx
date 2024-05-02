@@ -3,7 +3,7 @@ import { BsMoonStarsFill } from 'react-icons/bs';
 
 export default function Header() {
   return (
-    <header className="bg-gray-100 py-5 px-10 flex justify-between items-center">
+    <header className="py-5 px-5 flex justify-between items-center absolute w-screen">
       <section>
         <h2 className="text-xl">
           Thomas
