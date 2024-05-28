@@ -13,7 +13,7 @@ const portfolio = [
       'In this project I developed a recipes app, using the latest in the React ecosystem: Hooks and Context API!',
     tools: ['React', 'CSS', 'Hooks'],
     liveProject: 'https://',
-    githubCode: 'https://',
+    githubCode: 'https://github.com/thomasboospegler/recipes-app',
   },
   {
     name: 'Music App',
@@ -22,7 +22,7 @@ const portfolio = [
       'In this project I created an application capable of playing music from a wide variety of bands and artists, creating a list of favorite songs and editing the logged in user`s profile.',
     tools: ['React', 'CSS'],
     liveProject: 'https://',
-    githubCode: 'https://',
+    githubCode: 'https://github.com/thomasboospegler/trybetunes',
   },
   {
     name: 'Expenses Manager',
@@ -31,7 +31,7 @@ const portfolio = [
       'In the Expenses Manager project I developed an expense control wallet with a currency converter.',
     tools: ['React', 'Redux', 'CSS'],
     liveProject: 'https://',
-    githubCode: 'https://',
+    githubCode: 'https://github.com/thomasboospegler/trybewallet',
   },
   {
     name: 'ToDo List',
@@ -40,7 +40,7 @@ const portfolio = [
       'This is a solution to the Todo app challenge on Frontend Mentor',
     tools: ['React', 'Hooks', 'CSS'],
     liveProject: 'https://',
-    githubCode: 'https://',
+    githubCode: 'https://github.com/thomasboospegler/docker-todo-list',
   },
   {
     name: 'Trivia Game',
@@ -49,7 +49,7 @@ const portfolio = [
       'This was a group project in which we developed a trivia-based quiz game using React and Redux, developing its functionality in groups according to the demands defined in a Kanban board.',
     tools: ['React', 'Redux', 'CSS'],
     liveProject: 'https://',
-    githubCode: 'https://',
+    githubCode: 'https://github.com/thomasboospegler/trivia',
   },
   {
     name: 'Top Trumps',
@@ -58,7 +58,7 @@ const portfolio = [
     A digital version of Top Trumps written in react, in which you are able to create and save custom cards.`,
     tools: ['React', 'CSS'],
     liveProject: 'https://',
-    githubCode: 'https://',
+    githubCode: 'https://github.com/thomasboospegler/tryunfo',
   },
 ];
 
