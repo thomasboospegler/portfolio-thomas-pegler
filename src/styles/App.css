@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  --font: 'Titillium Web', sans-serif;
+  --font-size: 1.2rem;
+  --bg-gradient: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#3db2aa),
+    to(#3db297)
+  );
+  --bg-image: linear-gradient(#3db2aa, #3db297);
+  scroll-behavior: smooth;
+  --main-black: #1d1d1d;
+  --main-white: #fefefe;
+  --main-blue: #0f1624;
+  --main-purple: #3db2aa;
+  background-color: #1d1d1d;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #262626;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: #262626;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #212121;
+}
+
+body,
+input,
+textarea,
+button {
+  font-size: var(--font-size);
+}
+
+ul {
+  list-style: square;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.html-tag {
+  font-family: 'La Belle Aurore', cursive;
+  font-size: 1.1rem;
+  color: #6a6b6f;
+  user-select: none;
+}

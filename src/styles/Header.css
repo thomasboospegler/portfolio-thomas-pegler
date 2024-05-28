@@ -1,0 +1,156 @@
+.header-wrapper-dark,
+.header-wrapper-light {
+  font-family: var(--font);
+  width: 100vw;
+  height: 70px;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 2;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  animation: show-header 1s ease forwards;
+}
+
+@keyframes show-header {
+  from {
+    top: -150px;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    visibility: hidden;
+    transform: translateY(-80px);
+  }
+  to { 
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    visibility: visible;
+    transform: translateY(0);
+  }
+  to { 
+    visibility: hidden;
+    transform: translateY(-80px);
+  }
+}
+
+.header-wrapper-dark {
+  background-color: var(--main-black);
+  color: var(--main-white);
+}
+
+.header-wrapper-light {
+  background-image: var(--bg-gradient);
+  background-image: var(--bg-image);
+  color: var(--main-white);
+}
+
+.header-wrapper-light span {
+  color: var(--main-white);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+}
+
+.header-logo {
+  width: 110px;
+}
+
+.header-navbar {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 55%;
+  font-size: 1.1rem;
+}
+
+.header-menu a {
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  color: var(--main-white);
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.header-menu a:hover {
+  color: #c495fd;
+}
+
+.header-menu a:hover::before {
+  content: '<';
+  position: absolute;
+  left: -20px;
+}
+
+.header-menu a:hover::after {
+  content: '>';
+  position: absolute;
+  right: -20px;
+}
+
+@media only screen and (max-width: 1015px) {
+  .header-logo {
+    width: 90px;
+  }
+
+  .header-menu {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 50px;
+    width: 100%;
+  }
+
+  .header-menu a,
+  .header-socials a {
+    font-size: 1.2rem;
+    margin: 0 0 30px 0;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+  }
+
+  .header-menu a svg {
+    margin-right: 10px;
+  }
+
+  .header-socials {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+  }
+
+  .header-logo {
+    display: none;
+  }
+}

@@ -1,0 +1,15 @@
+.light-mode-container button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.light-mode-container button:hover {
+  transform: scale(105%);
+}
+
+@media only screen and (max-width: 481px) {
+  .light-mode-container button img {
+    width: 23px;
+  }
+}

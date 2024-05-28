@@ -1,0 +1,262 @@
+.projects-wrapper-dark,
+.projects-wrapper-light {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  font-family: var(--font);
+}
+
+.projects-wrapper-dark {
+  background-color: var(--main-black);
+  color: var(--main-white);
+}
+
+.projects-wrapper-light {
+  background-color: var(--main-white);
+  color: var(--main-black);
+}
+
+.projects-title {
+  font-size: 2.3rem;
+  margin: 15px 0 50px;
+}
+
+.projects-title div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects-title h2 {
+  margin: 0 20px;
+  text-align: center;
+}
+
+.projects-notheworthy-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem 0 3rem 0;
+}
+
+.projects-notheworthy-heading h3 {
+  font-size: 32px;
+  line-height: 40px;
+  margin: 0 1.2rem;
+}
+
+.projects-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  width: 90%;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 520px;
+  height: 500px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%),
+    0 1px 10px 0 rgb(0 0 0 / 12%);
+  margin: 40px;
+}
+
+.project-card-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.project-preview {
+  width: 470px;
+  height: 240px;
+  margin-top: 15px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.project-name-tools {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 55%;
+}
+
+.project-name {
+  padding: 0 15px;
+}
+
+.project-name h3 {
+  font-size: 1.4rem;
+  margin: 30px 0 20px 0;
+}
+
+.project-name p {
+  font-size: 0.7rem;
+  height: 70px;
+  margin-bottom: 25px;
+}
+
+.project-tools {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 20px;
+}
+
+.project-tools button {
+  font-size: 0.9rem;
+  border: 2px solid #6a6b6f;
+  border-radius: 5px;
+  width: 80px;
+  height: 30px;
+  margin-right: 9px;
+  color: #6a6b6f;
+  background-color: transparent;
+}
+
+.project-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 45%;
+}
+
+.project-buttons a {
+  width: 70%;
+  text-decoration: none;
+}
+
+.project-buttons button {
+  color: #3db2aa;
+  background-color: transparent;
+  border: 1px solid #3db2aa;
+  border-radius: 5px;
+  line-height: 1;
+  text-decoration: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  transition: all 0.3s ease;
+}
+
+.project-buttons button svg {
+  font-size: 1.2rem;
+  opacity: 0;
+  margin-right: -80px;
+  position: absolute;
+  transition: all 0.4s ease-out;
+}
+
+.project-buttons button:hover svg {
+  opacity: 1;
+  margin-right: -100px;
+}
+
+.project-buttons button:hover span {
+  margin-right: 20px;
+}
+
+.project-buttons button:hover {
+  transform: scale(1.04);
+}
+
+.project-buttons button svg {
+  margin-left: 10px;
+}
+
+.show-more-button {
+  color: #3db2aa;
+  background-color: transparent;
+  border: 1px solid #3db2aa;
+  border-radius: 5px;
+  padding: 1.25rem 1.75rem;
+  line-height: 1;
+  text-decoration: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin: 0 0 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 50px;
+}
+
+@media only screen and (max-width: 1366px) {
+  .project-card {
+    zoom: 0.9;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .project-card {
+    margin: 20px 20px 30px 20px;
+  }
+}
+
+@media only screen and (max-width: 1015px) {
+  .project-card {
+    zoom: 0.75;
+  }
+
+  .project-name h3 {
+    font-size: 1.3rem;
+    margin: 20px 0 20px 0;
+  }
+
+  .project-name p {
+    font-size: 0.7rem;
+    height: 60px;
+    margin-bottom: 40px;
+    overflow-y: scroll;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  .projects-title {
+    font-size: 1.9rem;
+  }
+
+  .projects-container {
+    margin-bottom: 40px;
+  }
+
+  .project-card {
+    margin: 20px;
+  }
+
+  .project-buttons button svg {
+    display: none;
+  }
+
+  .projects-notheworthy-heading {
+    margin: 1.5rem 1rem 3rem 1rem;
+  }
+
+  .projects-notheworthy-heading h3 {
+    text-align: center;
+    font-size: 28px;
+    line-height: 40px;
+    margin: 0 0.5rem;
+  }
+}

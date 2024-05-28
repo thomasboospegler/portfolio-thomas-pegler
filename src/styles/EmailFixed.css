@@ -1,0 +1,59 @@
+.email-fixed-dark,
+.email-fixed-light {
+  display: flex;
+  width: 385px;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 3;
+  opacity: 0;
+  bottom: 120px;
+  transform: rotate(90deg);
+  font-family: var(--font);
+  animation: show-email 600ms ease forwards;
+  animation-delay: 2s;
+}
+
+.email-fixed-dark .email-text {
+  color: var(--main-white);
+}
+
+.email-fixed-light .email-text {
+  color: #212121;
+}
+
+@keyframes show-email {
+  from {
+    opacity: 0;
+    right: -200px;
+  }
+  to {
+    opacity: 1;
+    right: -130px;
+  }
+}
+
+.email-text {
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.email-text:hover {
+  transform: translateX(-7px);
+  color: #9b30f9;
+}
+
+.email-fixed-line {
+  margin-left: 40px;
+  width: 90px;
+}
+
+@media only screen and (max-width: 1250px) {
+  .email-fixed-dark,
+  .email-fixed-light {
+    display: none;
+  }
+}

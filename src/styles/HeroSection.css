@@ -1,0 +1,267 @@
+.home-section-dark,
+.home-section-light {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.home-section-dark {
+  background-color: var(--main-black);
+  color: var(--main-white);
+}
+
+.home-section-light {
+  background-color: var(--main-white);
+  color: var(--main-black);
+}
+
+.home-section-light div svg path {
+  fill: #eee;
+  filter: drop-shadow(rgba(0, 0, 0, 0.35) 0px 5px 15px);
+}
+
+.home-container {
+  display: flex;
+  margin: 110px auto 60px auto;
+  align-items: center;
+  justify-content: space-between;
+  width: 67%;
+  height: 700px;
+  font-family: var(--font);
+}
+
+.home-text {
+  width: 560px;
+  margin-right: 50px;
+}
+
+.home-text span {
+  margin-left: -13px;
+}
+
+.home-description {
+  width: 500px;
+}
+
+.home-role {
+  background-image: var(--bg-gradient);
+  background-image: var(--bg-image);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 190px;
+  font-weight: 600;
+  text-align: center;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: var(--main-white);
+  -webkit-animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.home-intro-container {
+  margin-left: 20px;
+}
+
+.home-intro {
+  font-size: 3.7rem;
+  margin: 0 0 0 10px;
+}
+
+.home-intro-letter {
+  opacity: 0;
+  position: relative;
+  margin: 13px;
+  animation: move-text 600ms ease forwards;
+  cursor: default;
+}
+
+@keyframes move-text {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+    opacity: 0;
+  }
+  50% {
+    transform: translate3d(0px, -50px, 0px);
+    opacity: 0.7;
+  }
+  80% {
+    transform: translate3d(0px, 20px, 0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+    opacity: 1;
+  }
+}
+
+.home-intro-letter:hover {
+  color: #c495fd;
+}
+
+.home-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 800px;
+  height: 600px;
+  margin-bottom: 50px;
+}
+
+.home-svg {
+  position: absolute;
+  max-width: 800px;
+  z-index: 0;
+  right: -70px;
+  bottom: -70px;
+  -webkit-filter: drop-shadow(0px 5px 15px rgba(0, 0, 0, 0.35));
+  filter: drop-shadow(0px 5px 15px rgba(0, 0, 0, 0.15));
+}
+
+.home-avatar .programming-avatar {
+  position: absolute;
+  right: 15px;
+  bottom: 20px;
+  max-width: 500px;
+  max-height: 500px;
+  z-index: 1;
+  transform: translateY(0px);
+}
+
+.bganimation {
+  width: 500px;
+}
+
+@media only screen and (max-width: 1680px) {
+  .bganimation {
+    margin-top: 60px;
+  }
+
+  .home-container {
+    margin: 70px auto -30px auto;
+    width: 78%;
+    height: 600px;
+  }
+
+  .home-text {
+    width: 600px;
+  }
+
+  .home-intro {
+    font-size: 3.2rem;
+    width: 460px;
+  }
+
+  .home-svg {
+    width: 600px;
+    bottom: 0px;
+  }
+
+  .home-avatar img {
+    width: 400px;
+    height: 400px;
+    margin: 0 -15px 30px 0;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .home-section-dark,
+  .home-section-light {
+    min-height: 100vh;
+  }
+
+  .home-container {
+    margin: 20px auto -30px auto;
+    width: 84%;
+    height: 600px;
+  }
+
+  .home-text {
+    margin-right: 100px;
+  }
+
+  .home-description {
+    width: 450px;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .home-avatar {
+    display: none;
+  }
+
+  .home-container {
+    margin: 40px auto 0 25px;
+    width: 90%;
+    height: 600px;
+  }
+
+  .home-text {
+    max-width: 80%;
+    margin-right: 0;
+  }
+
+  .home-intro {
+    font-size: 2.2rem;
+    margin: 0 0 0 10px;
+  }
+
+  .home-description {
+    max-width: 100%;
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .bganimation {
+    flex: 1;
+    position: absolute;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .home-intro {
+    font-size: 2.0rem;
+    margin: 0 0 0 10px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .home-intro {
+    font-size: 1.9rem;
+    margin: 0 0 0 10px;
+  }
+}
