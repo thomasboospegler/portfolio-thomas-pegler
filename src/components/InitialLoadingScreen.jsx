@@ -1,11 +1,11 @@
 import React from 'react';
-import CircleLoader from 'react-spinners/CircleLoader';
+import PacmanLoader from 'react-spinners/PacmanLoader';
 import '../styles/InitialLoadingScreen.css';
 
 function InitialLoadingScreen() {
   return (
     <div className="loading-screen__container">
-      <CircleLoader color="#9b30f9" size={100} />
+      <PacmanLoader color="#36d7b7" size={40}  speedMultiplier={1.3}/>
     </div>
   );
 }
