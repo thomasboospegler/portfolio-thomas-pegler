@@ -67,6 +67,28 @@
   height: 50px;
 }
 
+.footer-cv {
+  color: #3db2aa;
+  background-color: transparent;
+  border: 1px solid #3db2aa;
+  border-radius: 5px;
+  line-height: 1;
+  text-decoration: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 50px;
+}
+
+.footer-cv:hover, .footer-email:hover {
+  background-color: #3db2aa;
+  color: #212121;
+}
+
 .footer-socials {
   display: flex;
   width: 80px;

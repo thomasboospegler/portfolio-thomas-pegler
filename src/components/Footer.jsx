@@ -30,6 +30,18 @@ export default function Footer() {
         >
           Say Hello
         </a>
+        <button
+          className="footer-cv"
+          onClick={
+            () =>
+              window.open(
+                'https://drive.google.com/file/d/11CM8EsUxFy8hBCZNtBy5YJRZYRbRf6xN/view?usp=drive_link',
+                '_blank'
+              )
+          }
+        >
+          Download CV
+        </button>
         {isMobile && (
           <div className="footer-socials">
             <a
