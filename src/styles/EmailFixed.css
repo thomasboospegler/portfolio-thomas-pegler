@@ -7,7 +7,7 @@
   position: fixed;
   z-index: 3;
   opacity: 0;
-  bottom: 120px;
+  bottom: 100px;
   transform: rotate(90deg);
   font-family: var(--font);
   animation: show-email 600ms ease forwards;
@@ -47,8 +47,7 @@
 }
 
 .email-fixed-line {
-  margin-left: 40px;
-  width: 90px;
+  width: 140px;
 }
 
 @media only screen and (max-width: 1250px) {

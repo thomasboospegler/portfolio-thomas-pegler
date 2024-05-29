@@ -82,7 +82,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 55%;
+  width: 100%;
   font-size: 1.1rem;
 }
 
@@ -92,6 +92,7 @@
   text-decoration: none;
   color: var(--main-white);
   margin-right: 15px;
+  margin-left: 15px;
   display: flex;
   align-items: center;
 }
